@@ -5,11 +5,15 @@ def counting_sort(array, maxvalue):
     for element in array:
         empty_array[element] += 1
 
+    # empty_array - her elementden neche denedir. 0-dan bashlayaraq
+    print(empty_array)
+
     index = 0
 
-    for element in range(length_of_empty_array):
-        for j in range(empty_array[element]):
-            array[index] = element
+    for i in range(length_of_empty_array):
+        for j in range(empty_array[i]):
+            print(f'i {i}')
+            array[index] = i
             index += 1
     return array
 
